@@ -5,7 +5,7 @@ Repositório da Disciplina de Desenvolvimento Web - Serratec
    E-Commerce de Música 🎧
 </h1>
 <div align="center">
-  <img align="right" width="200" height="300" src="https://github.com/BernardoChrist/devweb-grupo/">
+  <img align="right" width="200" height="300" src="https://github.com/BernardoChrist/devweb-grupo/blob/Serrafy.png">
 </div>
  
    ✔ 
