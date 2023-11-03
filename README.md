@@ -48,11 +48,11 @@ O E-Commerce de Música inclui as seguintes funcionalidades:
 
 ## Autores do projeto
 
-<a href = "https://github.com/BernardoChrist">Bernardo Christ </a></br>;
-      <a href = "https://github.com/caiquelms" > Caíque Lemos</a></br>;
-      <a href = "https://github.com/eduardocs90">Eduardo Carneiro</a></br>;
-      <a href = "https://github.com/JuFMacedo">Julia Freitas</a></br>;
-      <a href = "https://github.com/LilianeDavid93">Liliane Jóia </a></br>;
-      <a href = "https://github.com/marcospavao">Marcos Pavão</a>;
+<a href = "https://github.com/BernardoChrist">Bernardo Christ </a></br>
+      <a href = "https://github.com/caiquelms" > Caíque Lemos</a></br>
+      <a href = "https://github.com/eduardocs90">Eduardo Carneiro</a></br>
+      <a href = "https://github.com/JuFMacedo">Julia Freitas</a></br>
+      <a href = "https://github.com/LilianeDavid93">Liliane Jóia </a></br>
+      <a href = "https://github.com/marcospavao">Marcos Pavão</a>
 <br><br>
 
