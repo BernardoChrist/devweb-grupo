@@ -1,6 +1,3 @@
-# devweb-grupo
-Repositório da Disciplina de Desenvolvimento Web - Serratec
-
 <h1 align="center">
    E-Commerce de Música 🎧
 </h1>
