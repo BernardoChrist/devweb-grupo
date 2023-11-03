@@ -18,7 +18,7 @@ Repositório da Disciplina de Desenvolvimento Web - Serratec
 ## Sobre
 O projeto consiste na criação de um E-Commerce de Música, onde os usuários podem pesquisar e gerenciar músicas e álbuns. O aplicativo utiliza Componentes Funcionais e Hooks como useState e useEffect, React Router v6 para navegação, axios para requisições HTTP e validações de entrada para garantir dados completos.
 
-🎧 [Voltar ao Índice](#índice)
+🔄 [Voltar ao Índice](#índice)
 
 ## Funcionalidades
 
@@ -34,7 +34,7 @@ O E-Commerce de Música inclui as seguintes funcionalidades:
 
 - `Funcionalidade 5`: Inputs com Validação: Garante que os formulários de cadastro e edição de produtos não possam ser submetidos com campos em branco ou informações faltantes.
 
- 🎧 [Voltar ao Índice](#índice)
+🔄 [Voltar ao Índice](#índice)
 
 ## Tecnologias Utilizadas
 
@@ -44,7 +44,7 @@ O E-Commerce de Música inclui as seguintes funcionalidades:
 - [Git v2.41.0.3](https://git-scm.com/downloads)
 - [Trello](https://trello.com/pt-BR)
 
- 🎧 [Voltar ao Índice](#índice)
+🔄 [Voltar ao Índice](#índice)
 
 ## Autores do projeto
 
