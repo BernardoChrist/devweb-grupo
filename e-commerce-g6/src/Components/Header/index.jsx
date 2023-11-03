@@ -1,11 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Logo from "../../assets/Serrafy.png";
+import "./style.css";
 
 const Header = () => {
   return (
     <header>
       <div className="logo">
-        <img src="" alt="logo do site" />
+        <img src={Logo} alt="logo do Serrafy" />
       </div>
       <nav>
         <ul>

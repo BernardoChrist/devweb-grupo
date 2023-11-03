@@ -1,6 +1,6 @@
 header {
-  background-color: #ff914d;
-  color: #004aad;
+  background-color: #004aad;
+  color: #f3f5f7;
   padding: 10px 0;
   display: flex;
   justify-content: space-between;
@@ -20,7 +20,7 @@ nav li {
 
 nav a {
   text-decoration: none;
-  color: #004aad;
+  color: #f3f5f7;
   font-weight: bold;
 }
 
