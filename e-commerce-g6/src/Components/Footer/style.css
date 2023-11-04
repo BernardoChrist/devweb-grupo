@@ -8,4 +8,7 @@ footer {
   text-align: center;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: large;
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
 }

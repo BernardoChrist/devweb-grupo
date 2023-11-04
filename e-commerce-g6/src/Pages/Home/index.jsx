@@ -1,18 +1,21 @@
 import React from "react";
 import Header from "../../Components/Header";
 import Footer from "../../Components/Footer";
+import { Container } from "react-bootstrap";
 
 const Home = () => {
   return (
-    <div>
+    <Container fluid className="p-0">
       <header>
         <Header />
       </header>
-      <h1>Teste</h1>
+      <section className="pgHome">
+        <h1>Teste</h1>
+      </section>
       <footer>
         <Footer />
       </footer>
-    </div>
+    </Container>
   );
 };
 

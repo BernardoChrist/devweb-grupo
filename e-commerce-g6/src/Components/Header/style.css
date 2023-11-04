@@ -32,3 +32,12 @@ nav a {
   max-width: 125px;
   height: auto;
 }
+.bg-body-tertiary {
+  background-color: blue;
+  color: aqua;
+}
+.login {
+  display: flex;
+  justify-content: end;
+  justify-content: space-between;
+}
