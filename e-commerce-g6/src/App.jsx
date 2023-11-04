@@ -7,16 +7,20 @@ import "./App.css";
 
 function App() {
   return (
-    <body>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/contato" element={<Contato />} />
-        {/* <Route path="" element={} /> */}
-        <Route path="*" element={<h1>Pagina não encontrada</h1>} />
-      </Routes>
-    </body>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/contato" element={<Contato />} />
+      <Route path="*" element={<h1>Pagina não encontrada</h1>} />
+    </Routes>
   );
 }
 
 export default App;
+
+// <header>
+// <Header />
+// </header>
+// <footer>
+// <Footer />
+// </footer>
