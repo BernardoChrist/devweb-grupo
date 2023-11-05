@@ -30,8 +30,8 @@ function Header() {
           </Nav>
         </Navbar.Collapse>
       </Container>
-      <div class="login d-grid gap-2 d-md-flex justify-content-md-end">
-        <button class="btn btn-primary me-md-2" type="button">
+      <div className="login d-grid gap-2 d-md-flex justify-content-md-end">
+        <button className="btn btn-primary me-md-2" type="button">
           Login
         </button>
       </div>
