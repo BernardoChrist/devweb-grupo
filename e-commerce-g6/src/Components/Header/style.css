@@ -19,12 +19,19 @@ nav ul {
 
 nav li {
   margin-right: 20px;
+  margin: 20px;
 }
 
 nav a {
   text-decoration: none;
   color: #f3f5f7;
   font-weight: bold;
+  font-size: 23px;
+  margin: -8px 10px 10px 10px;
+}
+
+nav a:hover {
+  border-bottom: 2px solid #fff;
 }
 
 .logo {
