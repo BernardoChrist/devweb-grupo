@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import CreateMusica from "../../Components/CreateMusica";
 import Musica from "../../Components/Musica";
@@ -8,115 +8,95 @@ import "./style.css";
 
 const url = "https://65482e6add8ebcd4ab229f62.mockapi.io/serrafy";
 
-const MusicaList = () => {
+const App = () => {
   const [novaMusica, setNovaMusica] = useState("");
-  const [musica, setMusica] = useState([]);
+  const [musicas, setMusicas] = useState([]);
+  const [autor, setAutor] = useState("");
+  const [genero, setGenero] = useState("");
   const [loading, setLoading] = useState(false);
-  const [prova, setProva] = useState(false);
 
-  const cadastrar = async () => {
-    const musica = {
-      nome: novaMusica,
-      genero: "genero",
-      autor: "autor",
-      done: false,
-    };
-
-    try {
-      const { data } = await axios.post(url, musica);
-      console.log(data);
-      setMusica([...Musica, data]);
-      setNovaMusica("");
-    } catch (err) {
-      console.log(err);
-    }
-  };
-
-  const excluirMusica = async (id) => {
-    console.log("Excluir Musica: ", id);
-    try {
-      const { data } = await axios.delete(`${url}/${id}`);
-      console.log(data);
-
-      const arrayFiltrado = musica.filter((item) => item.id != id);
-      setMusica(arrayFiltrado);
-    } catch (err) {
-      console.log(err);
-    }
-  };
-
-  const getMusica = async () => {
+  const carregarMusicas = async () => {
     setLoading(true);
     try {
-      const { data } = await axios.get(url);
-      console.log(data);
-      setMusica(data);
-    } catch (err) {
-      console.log(err);
+      const response = await axios.get(url);
+      console.log("Resposta da requisição carregarMusicas:", response);
+      setMusicas(response.data);
+    } catch (error) {
+      console.error("Erro na requisição carregarMusicas:", error);
     } finally {
       setLoading(false);
     }
   };
 
-  const editarMusica = async (id, novaMusica) => {
+  const cadastrar = async () => {
+    const novaMusicaData = {
+      nome: novaMusica,
+      autor: autor,
+      genero: genero,
+    };
+
     try {
-      const { data } = await axios.put(`${url}/${id}`, novaMusica);
+      const response = await axios.post(url, novaMusicaData);
+      console.log("Resposta da requisição cadastrar:", response);
+      setMusicas([...musicas, response.data]);
+      setNovaMusica("");
+      setAutor("");
+      setGenero("");
+    } catch (error) {
+      console.error("Erro na requisição cadastrar:", error);
+    }
+  };
 
-      setMusica((prevMusica) => {
-        return prevMusica.map((item) => {
-          if (id == item.id) {
-            return data;
-          }
-          return item;
-        });
-      });
-
-      console.log(data);
-    } catch (err) {
-      console.log(err);
+  const excluirMusica = async (id) => {
+    try {
+      const response = await axios.delete(`${url}/${id}`);
+      console.log("Resposta da requisição excluirMusica:", response);
+      setMusicas(musicas.filter((musica) => musica.id !== id));
+    } catch (error) {
+      console.error("Erro na requisição excluirMusica:", error);
     }
   };
 
   useEffect(() => {
-    getMusica();
-  }, []);
-
-  useEffect(() => {
-    console.log("USEEFFECT!");
+    carregarMusicas();
   }, []);
 
   return (
-    <>
+    <div>
       <header>
         <Header />
       </header>
 
       <main>
-        <h1></h1>
         <section>
           <CreateMusica
             novaMusica={novaMusica}
             setNovaMusica={setNovaMusica}
+            autor={autor}
+            setAutor={setAutor}
+            genero={genero}
+            setGenero={setGenero}
             cadastrar={cadastrar}
           />
         </section>
         <section>
+          <button onClick={carregarMusicas}>Atualizar</button>
           <h2 className="hlist">Lista de Musicas</h2>
-          {musica.map((item) => (
+          {musicas.map((musica) => (
             <Musica
-              key={item.id}
-              item={item}
+              key={musica.id}
+              item={musica}
               excluirMusica={excluirMusica}
-              editarMusica={editarMusica}
             />
           ))}
         </section>
-        <footer>
-          <Footer />
-        </footer>
       </main>
-    </>
+
+      <footer>
+        <Footer />
+      </footer>
+    </div>
   );
 };
 
-export default MusicaList;
+export default App;
