@@ -12,4 +12,13 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100vw;
+  height: 9vh;
+}
+
+.insta {
+  margin-left: 10px;
+}
+
+.face {
+  margin-right: 25px;
 }
