@@ -15,14 +15,14 @@ const App = () => {
   const [genero, setGenero] = useState("");
   const [loading, setLoading] = useState(false);
 
-  const carregarMusicas = async () => {
+  const carregarMusicasPorGenero = async (genero) => {
     setLoading(true);
     try {
-      const response = await axios.get(url);
-      console.log("Resposta da requisição carregarMusicas:", response);
+      const response = await axios.get(`${url}?genero=${genero}`);
+      console.log("Resposta da requisição carregarMusicasPorGenero:", response);
       setMusicas(response.data);
     } catch (error) {
-      console.error("Erro na requisição carregarMusicas:", error);
+      console.error("Erro na requisição carregarMusicasPorGenero:", error);
     } finally {
       setLoading(false);
     }
@@ -60,8 +60,8 @@ const App = () => {
   };
 
   useEffect(() => {
-    carregarMusicas();
-  }, []);
+    carregarMusicasPorGenero(genero);
+  }, [genero]);
 
   return (
     <div>
@@ -79,6 +79,7 @@ const App = () => {
             genero={genero}
             setGenero={setGenero}
             cadastrar={cadastrar}
+            buscarPorGenero={carregarMusicasPorGenero}
           />
         </section>
         <section>

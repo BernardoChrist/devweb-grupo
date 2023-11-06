@@ -1,5 +1,5 @@
 import "./style.css";
-import React from "react";
+import React, { useState } from "react";
 
 const CreateMusica = ({
   novaMusica,
@@ -9,7 +9,23 @@ const CreateMusica = ({
   genero,
   setGenero,
   cadastrar,
+  buscarPorGenero,
 }) => {
+  const [filtroGenero, setFiltroGenero] = useState("");
+
+  const handleCadastrar = () => {
+    if (!novaMusica || !autor || !genero) {
+      alert("Todos os campos devem ser preenchidos.");
+      return;
+    }
+
+    cadastrar();
+  };
+
+  const handleBuscarPorGenero = () => {
+    buscarPorGenero(filtroGenero);
+  };
+
   return (
     <div className="div2">
       <h2>Adicione sua Música</h2>
@@ -50,8 +66,24 @@ const CreateMusica = ({
         placeholder="Gênero"
       />
       <br />
-      <button className="botao" onClick={cadastrar}>
+      <button className="botao" onClick={handleCadastrar}>
         Adicionar Música
+      </button>
+      <br />
+      <input
+        type="text"
+        value={filtroGenero}
+        onChange={(e) => setFiltroGenero(e.target.value)}
+        style={{
+          width: "200px",
+          height: "30px",
+          fontSize: "16px",
+          marginLeft: "18px",
+        }}
+        placeholder="Filtrar por Gênero"
+      />
+      <button className="botao" onClick={handleBuscarPorGenero}>
+        Buscar por Gênero
       </button>
     </div>
   );
