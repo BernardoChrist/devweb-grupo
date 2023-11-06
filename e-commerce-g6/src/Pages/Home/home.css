@@ -1,0 +1,33 @@
+.carousel-rectangular-landscape {
+  max-width: 600px;
+  max-height: 400px;
+  margin: 0 auto;
+}
+
+.carousel-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 150px;
+  padding-bottom: 20px;
+  min-height: 70vh;
+}
+
+.carousel-rectangular-landscape img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.carousel-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.centered-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
