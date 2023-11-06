@@ -1,5 +1,5 @@
 header {
-  background-color: #004aad;
+  background-color: black;
   color: #f3f5f7;
   padding: 10px 0;
   display: flex;
@@ -11,13 +11,19 @@ header {
   top: 0;
   width: 100vw;
 }
-
+.navbar {
+  background-color: black;
+  margin-top: 0;
+}
 nav ul {
+  background-color: black;
   list-style: none;
   display: flex;
+  margin: 0;
 }
 
 nav li {
+  background-color: black;
   margin-right: 20px;
 }
 
@@ -35,10 +41,7 @@ nav a {
   max-width: 125px;
   height: auto;
 }
-.bg-body-tertiary {
-  background-color: blue;
-  color: aqua;
-}
+
 .bg .navbar .botao-login {
   display: flex;
   justify-content: end;

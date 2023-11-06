@@ -1,9 +1,9 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Login from "./Pages/Login";
-import Contato from "./Pages/Contato";
-import Home from "./Pages/Home";
-import Serrafy from "./Pages/Serrafy";
+import Contato from "./Pages/Contato/index";
+import Home from "./Pages/Home/home";
+import Serrafy from "./Pages/Serrafy/index";
 import "./App.css";
 
 function App() {

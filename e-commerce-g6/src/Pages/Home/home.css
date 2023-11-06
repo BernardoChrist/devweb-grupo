@@ -1,7 +1,24 @@
+header {
+  background-color: #000000;
+  color: #f3f5f7;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: xx-large;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  position: sticky;
+  top: 0;
+  width: 100vw;
+  z-index: 1000;
+}
+
 .carousel-rectangular-landscape {
-  max-width: 600px;
+  max-width: 700px;
   max-height: 400px;
   margin: 0 auto;
+  color: white;
+  position: sticky;
 }
 
 .carousel-container {
@@ -12,22 +29,50 @@
   padding-top: 150px;
   padding-bottom: 20px;
   min-height: 70vh;
+  max-height: 200px;
+  position: sticky;
 }
 
 .carousel-rectangular-landscape img {
   width: 100%;
   object-fit: cover;
+  position: sticky;
 }
 
 .carousel-image {
-  max-width: 100%;
   height: auto;
+  width: auto;
 }
 
 .centered-title {
-  position: absolute;
+  position: sticky;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
+}
+.container-fluid {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pgHome {
+  height: 1000px;
+}
+
+.titulo {
+  color: white;
+}
+.texto {
+  color: white;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+
+.d-flex {
+  justify-content: start;
 }
