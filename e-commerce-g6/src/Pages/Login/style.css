@@ -16,12 +16,13 @@
   color: black;
 }
 .login {
-  padding: 250px;
+  padding: 60px;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  padding: auto;
+  /* padding: auto; */
   height: 100vh;
+  justify-content: center;
 }
 .botaouniversal {
   width: 8rem;
