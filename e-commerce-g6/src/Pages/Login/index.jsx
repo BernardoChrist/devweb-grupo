@@ -45,28 +45,39 @@ export default function Login() {
         <Header />
       </header>
       <div className="login">
-        <div>
-          <form className="form">
-            <h1>Página de Login</h1>
-            <input
-              type="text"
-              placeholder="Digite Seu login"
-              value={login}
-              onChange={(e) => setLogin(e.target.value)}
-            />
-            <br />
-            <input
-              type="password"
-              placeholder="Digite Sua Senha"
-              value={senha}
-              onChange={(e) => setSenha(e.target.value)}
-            />
-            <br />
-            <button className="botaouniversal" type="button" onClick={entrar}>
-              Entrar
-            </button>
-          </form>
-        </div>
+        <form className="form">
+          <h1>Página de Login</h1>
+          <input
+            type="text"
+            placeholder="Digite Seu login"
+            value={login}
+            onChange={(e) => setLogin(e.target.value)}
+            style={{
+              width: "300px",
+              height: "45px",
+              fontSize: "20px",
+              marginTop: "25px",
+              marginBottom: "15px",
+            }}
+          />
+          <br />
+          <input
+            type="password"
+            placeholder="Digite Sua Senha"
+            value={senha}
+            onChange={(e) => setSenha(e.target.value)}
+            style={{
+              width: "300px",
+              height: "45px",
+              fontSize: "20px",
+              marginBottom: "15px",
+            }}
+          />
+          <br />
+          <button className="botaouniversal" type="button" onClick={entrar}>
+            Entrar
+          </button>
+        </form>
       </div>
       <header>
         <Footer />

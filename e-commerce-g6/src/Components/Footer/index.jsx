@@ -4,9 +4,8 @@ import "./style.css";
 const Footer = () => {
   return (
     <footer>
-      <h3>Serrafy</h3>
-      <address>Intagram: @serrafy </address>
-      <address>Facebook: Serrafy</address>
+      <address className="insta">Intagram: @serrafy </address>
+      <address className="face">Facebook: Serrafy</address>
     </footer>
   );
 };
