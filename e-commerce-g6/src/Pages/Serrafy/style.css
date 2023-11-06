@@ -3,6 +3,9 @@ body {
   background-size: cover;
 }
 .hlist {
-  margin-left: 18px;
+  margin-top: 25px;
+  margin-bottom: 20px;
   color: #ff5733;
+  text-align: center;
+  align-items: center;
 }

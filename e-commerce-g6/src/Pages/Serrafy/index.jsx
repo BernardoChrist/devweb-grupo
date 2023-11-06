@@ -82,8 +82,8 @@ const App = () => {
           />
         </section>
         <section>
-          <button onClick={carregarMusicas}>Atualizar</button>
-          <h2 className="hlist">Lista de Musicas</h2>
+          {/* <button onClick={carregarMusicas}>Atualizar</button> */}
+          <h2 className="hlist">Sua Playlist</h2>
           {musicas.map((musica) => (
             <Musica
               key={musica.id}

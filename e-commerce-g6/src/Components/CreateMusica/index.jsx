@@ -12,7 +12,7 @@ const CreateMusica = ({
 }) => {
   return (
     <div className="div2">
-      <h2 className="h2">Cadastre sua Música</h2>
+      <h2>Adicione sua Música</h2>
       <input
         type="text"
         value={novaMusica}
@@ -51,7 +51,7 @@ const CreateMusica = ({
       />
       <br />
       <button className="botao" onClick={cadastrar}>
-        Cadastrar
+        Adicionar Música
       </button>
     </div>
   );
