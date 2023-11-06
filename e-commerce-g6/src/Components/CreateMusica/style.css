@@ -1,15 +1,16 @@
 .div2 {
   margin-top: 150px;
+  text-align: center;
 }
 .botao {
   margin-left: 18px;
-  margin-top: 4px;
+  margin-top: 20px;
+  margin-bottom: 25px;
 }
-.h2 {
-  margin-top: 550px;
+h2 {
   color: #ff5733;
 }
 .div2 h2 {
   color: #ff5733;
-  margin-left: 18px;
+  margin-bottom: 20px;
 }
