@@ -3,11 +3,13 @@ import { Route, Routes } from "react-router-dom";
 import Login from "./Pages/Login";
 import Contato from "./Pages/Contato";
 import Home from "./Pages/Home";
+import Serrafy from "./Pages/Serrafy";
 import "./App.css";
 
 function App() {
   return (
     <Routes>
+      <Route path="/serrafy" element={<Serrafy />} />
       <Route path="/" element={<Home />} />
       <Route path="/login" element={<Login />} />
       <Route path="/contato" element={<Contato />} />
