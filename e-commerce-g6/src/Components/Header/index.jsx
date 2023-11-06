@@ -29,6 +29,7 @@ function Header() {
                 Separated link
               </NavDropdown.Item>
             </NavDropdown>
+            <Nav.Link href="/serrafy">Musicas</Nav.Link>
           </Nav>
         </Navbar.Collapse>
         <Nav.Link className="botao-login" href="/login">

@@ -2,6 +2,9 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import CreateMusica from "../../Components/CreateMusica";
 import Musica from "../../Components/Musica";
+import Header from "../../Components/Header";
+import Footer from "../../Components/Footer";
+import "./style.css";
 
 const url = "https://65482e6add8ebcd4ab229f62.mockapi.io/serrafy";
 
@@ -55,13 +58,19 @@ const MusicaList = () => {
     }
   };
 
-  const editarMusica = async (id) => {
-    const musica = {
-      genero: "Novo Genero",
-    };
+  const editarMusica = async (id, novaMusica) => {
     try {
-      const { data } = await axios.put(`${url}/${id}`, musica);
-      setMusica(data);
+      const { data } = await axios.put(`${url}/${id}`, novaMusica);
+
+      setMusica((prevMusica) => {
+        return prevMusica.map((item) => {
+          if (id == item.id) {
+            return data;
+          }
+          return item;
+        });
+      });
+
       console.log(data);
     } catch (err) {
       console.log(err);
@@ -77,27 +86,36 @@ const MusicaList = () => {
   }, []);
 
   return (
-    <main>
-      <h1>Lista de musicas</h1>
-      <section>
-        <CreateMusica
-          novaMusica={novaMusica}
-          setNovaMusica={setNovaMusica}
-          cadastrar={cadastrar}
-        />
-      </section>
-      <section>
-        <h2>Lista de Musicas</h2>
-        {musica.map((item) => (
-          <Musica
-            key={item.id}
-            item={item}
-            excluirMusica={excluirMusica}
-            editarMusica={editarMusica}
+    <>
+      <header>
+        <Header />
+      </header>
+
+      <main>
+        <h1></h1>
+        <section>
+          <CreateMusica
+            novaMusica={novaMusica}
+            setNovaMusica={setNovaMusica}
+            cadastrar={cadastrar}
           />
-        ))}
-      </section>
-    </main>
+        </section>
+        <section>
+          <h2 className="hlist">Lista de Musicas</h2>
+          {musica.map((item) => (
+            <Musica
+              key={item.id}
+              item={item}
+              excluirMusica={excluirMusica}
+              editarMusica={editarMusica}
+            />
+          ))}
+        </section>
+        <footer>
+          <Footer />
+        </footer>
+      </main>
+    </>
   );
 };
 

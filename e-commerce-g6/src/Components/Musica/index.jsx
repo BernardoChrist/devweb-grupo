@@ -1,41 +1,20 @@
-import Button from "react-bootstrap/Button";
-import Card from "react-bootstrap/Card";
-import {
-  FcMediumPriority,
-  FcHighPriority,
-  FcLowPriority,
-} from "react-icons/fc";
+import "./style.css";
 
-const Musica = ({ item, excluirMusica }) => {
-  const escolhePrioridade = (genero) => {
-    switch (genero) {
-      case "pagode":
-        return <FcHighPriority />;
-      case "rock":
-        return <FcMediumPriority />;
-      case "mpb":
-        return <FcLowPriority />;
-      default:
-        return null;
-    }
+const Musica = ({ item, excluirMusica, editarMusica }) => {
+  const handleEditarMusica = () => {
+    editarMusica(item.id, { genero: "pagode" });
   };
 
   return (
-    <Card>
-      <Card.Header>
-        {escolhePrioridade(item.genero)}
-        {item.nome}
-      </Card.Header>
-      <Card.Body>
-        <Card.Text>{item.genero}</Card.Text>
-        <Button variant="primary" onClick={() => editarMusica(item.id)}>
-          Editar
-        </Button>
-        <Button variant="danger" onClick={() => excluirMusica(item.id)}>
-          Excluir
-        </Button>
-      </Card.Body>
-    </Card>
+    <div className="div">
+      <span className="nome-genero">
+        {item.nome} - {item.genero}
+      </span>
+      <div className="botoes">
+        <button onClick={handleEditarMusica}>Editar</button>
+        <button onClick={() => excluirMusica(item.id)}>Excluir</button>
+      </div>
+    </div>
   );
 };
 

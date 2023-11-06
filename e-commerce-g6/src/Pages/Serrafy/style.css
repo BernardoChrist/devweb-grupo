@@ -1,0 +1,8 @@
+body {
+  background: url("../../assets/paginaMusica.png") no-repeat center center fixed;
+  background-size: cover;
+}
+.hlist {
+  margin-left: 18px;
+  color: #ff5733;
+}
