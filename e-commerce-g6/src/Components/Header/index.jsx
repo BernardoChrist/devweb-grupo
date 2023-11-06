@@ -4,6 +4,8 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import logo from "../../assets/Serrafy.png";
 import "./style.css";
+import React from "react";
+
 function Header() {
   return (
     <Navbar expand="lg" className="bg-body-dark">
@@ -29,12 +31,10 @@ function Header() {
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
-      </Container>
-      <div className="login d-grid gap-2 d-md-flex justify-content-md-end">
-        <button className="btn btn-primary me-md-2" type="button">
+        <Nav.Link className="botao-login" href="/login">
           Login
-        </button>
-      </div>
+        </Nav.Link>
+      </Container>
     </Navbar>
   );
 }

@@ -19,10 +19,3 @@ function App() {
 }
 
 export default App;
-
-// <header>
-// <Header />
-// </header>
-// <footer>
-// <Footer />
-// </footer>

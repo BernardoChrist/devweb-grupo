@@ -2,6 +2,8 @@ import React from "react";
 import { useState } from "react";
 import { useNavigate, useParams, useLocation } from "react-router-dom";
 import "./style.css";
+import Header from "../../Components/Header";
+import Footer from "../../Components/Footer";
 
 const dados = {
   login: "Admin",
@@ -32,35 +34,43 @@ export default function Login() {
       setLogin("");
       setSenha("");
 
-      navigate("/");
+      navigate("/login");
     } else {
       alert("Login ou Senha Inválidos!");
     }
   };
   return (
-    <div className="login">
-      <div>
-        <form className="form">
-          <h1>Página de Login</h1>
-          <input
-            type="text"
-            placeholder="Digite Seu login"
-            value={login}
-            onChange={(e) => setLogin(e.target.value)}
-          />
-          <br />
-          <input
-            type="password"
-            placeholder="Digite Sua Senha"
-            value={senha}
-            onChange={(e) => setSenha(e.target.value)}
-          />
-          <br />
-          <button className="botaouniversal" type="button" onClick={entrar}>
-            Entrar
-          </button>
-        </form>
+    <>
+      <header>
+        <Header />
+      </header>
+      <div className="login">
+        <div>
+          <form className="form">
+            <h1>Página de Login</h1>
+            <input
+              type="text"
+              placeholder="Digite Seu login"
+              value={login}
+              onChange={(e) => setLogin(e.target.value)}
+            />
+            <br />
+            <input
+              type="password"
+              placeholder="Digite Sua Senha"
+              value={senha}
+              onChange={(e) => setSenha(e.target.value)}
+            />
+            <br />
+            <button className="botaouniversal" type="button" onClick={entrar}>
+              Entrar
+            </button>
+          </form>
+        </div>
       </div>
-    </div>
+      <header>
+        <Footer />
+      </header>
+    </>
   );
 }
