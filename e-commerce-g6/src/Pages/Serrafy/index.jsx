@@ -47,8 +47,6 @@ const App = () => {
     }
   };
 
-  const editarMusica = async (id) => {};
-
   const excluirMusica = async (id) => {
     try {
       const response = await axios.delete(`${url}/${id}`);
@@ -89,6 +87,7 @@ const App = () => {
             <Musica
               key={musica.id}
               item={musica}
+              editarMusica={editarMusica}
               excluirMusica={excluirMusica}
             />
           ))}

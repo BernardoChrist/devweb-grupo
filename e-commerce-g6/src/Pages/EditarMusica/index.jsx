@@ -6,6 +6,16 @@ import { useNavigate, useParams, useLocation } from "react-router-dom";
 import "./style.css";
 
 const EditarMusica = () => {
+  const { state } = useLocation();
+
+  const [novaMusica, setNovaMusica] = useState("");
+  const [musicas, setMusicas] = useState([]);
+  const [autor, setAutor] = useState("");
+  const [genero, setGenero] = useState("");
+
+  const editarMusica = async (id) => {};
+
+  console.log(state);
   return (
     <div>
       <header>
@@ -71,6 +81,10 @@ const EditarMusica = () => {
               marginLeft: "18px",
             }}
           />
+        </div>
+
+        <div>
+          <button>Salvar Alterações</button>
         </div>
       </section>
 

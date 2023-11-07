@@ -4,7 +4,7 @@ import "./style.css";
 const Musica = ({ item, excluirMusica, editarMusica }) => {
   const Navigate = useNavigate();
   const mudarPg = () => {
-    Navigate("/editar");
+    Navigate("/editar", { state: { item } });
   };
 
   const handleEditarMusica = () => {
