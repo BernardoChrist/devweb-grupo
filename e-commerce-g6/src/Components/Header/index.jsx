@@ -42,7 +42,9 @@ function Header() {
         >
           Login
         </Link>
-        <button onClick={handleTheme}>dark</button>
+        <button className="darkmode" onClick={handleTheme}>
+          dark
+        </button>
       </Container>
     </Navbar>
   );
