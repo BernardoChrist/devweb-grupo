@@ -1,21 +1,43 @@
 import React from "react";
 import Header from "../../Components/Header";
 import Footer from "../../Components/Footer";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate, useParams, useLocation } from "react-router-dom";
+import axios from "axios";
 import "./style.css";
-import Editar from "../../Components/EditMusica";
+
+const EditMuicModel = {
+  id: "",
+  nome: "",
+  autor: "",
+  genero: "",
+};
+
 const EditarMusica = () => {
+  const url = "https://65482e6add8ebcd4ab229f62.mockapi.io/serrafy";
   const { state } = useLocation();
+  const [editMusicModel, setEditMusicModel] = useState(EditMuicModel);
 
-  const [novaMusica, setNovaMusica] = useState("");
-  const [musicas, setMusicas] = useState([]);
-  const [autor, setAutor] = useState("");
-  const [genero, setGenero] = useState("");
+  function handleEditMusicModel(value, key) {
+    setEditMusicModel({
+      ...editMusicModel,
+      [key]: value,
+    });
+  }
 
-  const editarMusica = async (id) => {};
+  const editarMusica = async (id) => {
+    try {
+      const response = await axios.put(`${url}/${id}`, editMusicModel);
+      alert("Musica alterada com sucesso:", response.status);
+    } catch (error) {
+      alert("Erro na requisição editar Musica:", error);
+    }
+  };
 
-  console.log(state);
+  useEffect(() => {
+    setEditMusicModel(state.item);
+  }, [state]);
+
   return (
     <div>
       <header>
@@ -23,27 +45,12 @@ const EditarMusica = () => {
       </header>
       <section className="editarmusica">
         <h1>Edite sua musica</h1>
-
-        <div className="inputs">
-          <input
-            type="text"
-            placeholder="ID da Música"
-            // value={login}
-            // onChange={(e) => setLogin(e.target.value)}
-            style={{
-              width: "300px",
-              height: "40px",
-              fontSize: "20px",
-              marginLeft: "18px",
-            }}
-          />
-        </div>
         <div className="inputs">
           <input
             type="text"
             placeholder="Nome da Música"
-            // value={login}
-            // onChange={(e) => setLogin(e.target.value)}
+            value={editMusicModel.nome}
+            onChange={(e) => handleEditMusicModel(e.target.value, "nome")}
             style={{
               width: "300px",
               height: "40px",
@@ -57,8 +64,8 @@ const EditarMusica = () => {
           <input
             type="text"
             placeholder="Autor da Música"
-            // value={login}
-            //onChange={(e) => setLogin(e.target.value)}
+            value={editMusicModel.autor}
+            onChange={(e) => handleEditMusicModel(e.target.value, "autor")}
             style={{
               width: "300px",
               height: "40px",
@@ -72,8 +79,8 @@ const EditarMusica = () => {
           <input
             type="text"
             placeholder="Genero Musical"
-            //value={login}
-            //onChange={(e) => setLogin(e.target.value)}
+            value={editMusicModel.genero}
+            onChange={(e) => handleEditMusicModel(e.target.value, "genero")}
             style={{
               width: "300px",
               height: "40px",
@@ -84,7 +91,9 @@ const EditarMusica = () => {
         </div>
 
         <div>
-          <button onClick={Editar}>Salvar Alterações</button>
+          <button onClick={(e) => editarMusica(editMusicModel.id)}>
+            Salvar Alterações
+          </button>
         </div>
       </section>
 

@@ -8,7 +8,6 @@ const EditMusica = ({ editarMusica, musica }) => {
   };
 
   const handleEditarMusica = () => {
-    EditMusica();
     editarMusica(music);
   };
 

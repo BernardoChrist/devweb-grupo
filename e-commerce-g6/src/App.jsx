@@ -6,7 +6,7 @@ import Home from "./Pages/Home/home";
 import Sobre from "./Pages/Sobre/sobre";
 import Serrafy from "./Pages/Serrafy/index";
 import "./App.css";
-import EditarMusica from "./Pages/EditarMusica";
+import EditarMusica from "./Pages/EditarMusica/index";
 import { ThemeContextProvider } from "./context/ThemeContext";
 
 function App() {
