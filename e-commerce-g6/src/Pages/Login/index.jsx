@@ -14,12 +14,10 @@ export default function Login() {
   const [senha, setSenha] = useState("");
 
   const navigate = useNavigate();
-  const { parametro } = useParams();
   const { state } = useLocation();
   console.log(state);
 
   const entrar = () => {
-    console.log("FUNCAO ENTRAR");
     if (login == "" || senha == "") {
       console.log("Preencha os campo de login e senha");
     } else if (login == dados.login && senha == dados.senha) {
@@ -33,8 +31,7 @@ export default function Login() {
 
       setLogin("");
       setSenha("");
-
-      navigate("/login");
+      navigate("/home/" + login);
     } else {
       alert("Login ou Senha Inválidos!");
     }
@@ -46,24 +43,25 @@ export default function Login() {
       </header>
       <div className="login">
         <form className="form">
-          <h1>Página de Login</h1>
+          <h1>Faça seu login</h1>
+          <p className="usuario">Usuário</p>
           <input
             type="text"
-            placeholder="Digite Seu login"
+            placeholder="Digite seu usuário"
             value={login}
             onChange={(e) => setLogin(e.target.value)}
             style={{
               width: "300px",
               height: "45px",
               fontSize: "20px",
-              marginTop: "25px",
               marginBottom: "15px",
             }}
           />
           <br />
+          <p className="senha">Senha</p>
           <input
             type="password"
-            placeholder="Digite Sua Senha"
+            placeholder="Digite sua senha"
             value={senha}
             onChange={(e) => setSenha(e.target.value)}
             style={{

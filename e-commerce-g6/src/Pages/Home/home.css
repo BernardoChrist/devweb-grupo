@@ -51,6 +51,7 @@
 
 .titulo {
   color: white;
+  margin-top: 10px;
 }
 .texto {
   color: white;
@@ -67,4 +68,10 @@
 .home-container {
   padding-bottom: 100px;
   padding-top: 100px;
+}
+
+.img-genero:hover {
+  transition: ease 0.5s;
+  transform: scale(1.1);
+  box-shadow: white 0 0 20px;
 }

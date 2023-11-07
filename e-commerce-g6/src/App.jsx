@@ -12,10 +12,11 @@ function App() {
     <Routes>
       <Route path="/serrafy" element={<Serrafy />} />
       <Route path="/" element={<Home />} />
+      <Route path="/home/:user" element={<Home />} />
       <Route path="/login" element={<Login />} />
       <Route path="/contato" element={<Contato />} />
-      <Route path="*" element={<h1>Pagina não encontrada</h1>} />
       <Route path="/editar" element={<EditarMusica />} />
+      <Route path="*" element={<h1>Pagina não encontrada</h1>} />
     </Routes>
   );
 }
