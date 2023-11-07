@@ -4,7 +4,7 @@ import Footer from "../../Components/Footer";
 import { useState } from "react";
 import { useNavigate, useParams, useLocation } from "react-router-dom";
 import "./style.css";
-
+import Editar from "../../Components/EditMusica";
 const EditarMusica = () => {
   const { state } = useLocation();
 
@@ -84,7 +84,7 @@ const EditarMusica = () => {
         </div>
 
         <div>
-          <button>Salvar Alterações</button>
+          <button onClick={Editar}>Salvar Alterações</button>
         </div>
       </section>
 

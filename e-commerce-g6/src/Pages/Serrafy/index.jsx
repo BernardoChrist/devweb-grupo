@@ -47,6 +47,16 @@ const App = () => {
     }
   };
 
+  const editarMusica = async (id) => {
+    try {
+      const response = await axios.editarMusica(`${url}/${id}`);
+      console.log("Musica alterada com sucesso:", response);
+      setMusicas(musicas.filter((musica) => musica.id !== id));
+    } catch (error) {
+      console.error("Erro na requisição editar Musica:", error);
+    }
+  };
+
   const excluirMusica = async (id) => {
     try {
       const response = await axios.delete(`${url}/${id}`);
