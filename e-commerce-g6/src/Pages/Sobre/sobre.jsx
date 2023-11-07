@@ -32,37 +32,61 @@ const Sobre = () => {
           <ul>
             <li>
               <img className="avatar" src={devBernardo} alt="Bernardo" />
-              <a href="https://github.com/BernardoChrist" target="_blank">
+              <a
+                className="links"
+                href="https://github.com/BernardoChrist"
+                target="_blank"
+              >
                 <span>Bernardo Christ</span>
               </a>
             </li>
             <li>
               <img className="avatar" src={devCaique} alt="Caique" />
-              <a href="https://github.com/caiquelms" target="_blank">
+              <a
+                className="links"
+                href="https://github.com/caiquelms"
+                target="_blank"
+              >
                 <span>Caíque Lemos</span>
               </a>
             </li>
             <li>
               <img className="avatar" src={devEduardo} alt="Eduardo" />
-              <a href="https://github.com/eduardocs90" target="_blank">
+              <a
+                className="links"
+                href="https://github.com/eduardocs90"
+                target="_blank"
+              >
                 <span>Eduardo Carneiro</span>
               </a>
             </li>
             <li>
               <img className="avatar" src={devJulia} alt="Julia" />
-              <a href="https://github.com/JuFMacedo" target="_blank">
+              <a
+                className="links"
+                href="https://github.com/JuFMacedo"
+                target="_blank"
+              >
                 <span>Julia Freitas</span>
               </a>
             </li>
             <li>
               <img className="avatar" src={devLiliane} alt="Liliane" />
-              <a href="https://github.com/LilianeDavid93" target="_blank">
+              <a
+                className="links"
+                href="https://github.com/LilianeDavid93"
+                target="_blank"
+              >
                 <span>Liliane David</span>
               </a>
             </li>
             <li>
               <img className="avatar" src={devMarcos} alt="Marcos" />
-              <a href="https://github.com/marcospavao" target="_blank">
+              <a
+                className="links"
+                href="https://github.com/marcospavao"
+                target="_blank"
+              >
                 <span>Marcos Pavão</span>
               </a>
             </li>

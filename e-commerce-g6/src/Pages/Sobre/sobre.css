@@ -9,7 +9,8 @@ body {
 
 .sobre-page {
   display: flex;
-  padding: 10%;
+
+  /* padding: 10%; */
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
@@ -19,7 +20,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-right: 20px;
+  /* margin-right: 20px; */
+  margin: 70px 0 0 100px;
 }
 
 .sobre {
@@ -51,6 +53,7 @@ body {
 ul {
   list-style: none;
   padding: 0;
+  text-decoration: none;
 }
 
 .avatar {
@@ -58,8 +61,19 @@ ul {
   height: 50px;
   border-radius: 50%;
   text-decoration: none;
+  margin-right: 10px;
 }
 
 .desenvolvedores ul li {
   margin-bottom: 30px;
+}
+
+.links {
+  text-decoration: none;
+  color: white;
+}
+
+.links :hover {
+  text-decoration: underline;
+  color: rgb(12, 12, 131);
 }

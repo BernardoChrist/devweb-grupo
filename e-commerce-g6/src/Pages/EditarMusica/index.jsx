@@ -16,6 +16,7 @@ const EditMuicModel = {
 const EditarMusica = () => {
   const url = "https://65482e6add8ebcd4ab229f62.mockapi.io/serrafy";
   const { state } = useLocation();
+  const Navigate = useNavigate();
   const [editMusicModel, setEditMusicModel] = useState(EditMuicModel);
 
   function handleEditMusicModel(value, key) {
@@ -29,6 +30,7 @@ const EditarMusica = () => {
     try {
       const response = await axios.put(`${url}/${id}`, editMusicModel);
       alert("Musica alterada com sucesso:", response.status);
+      Navigate("/serrafy");
     } catch (error) {
       alert("Erro na requisição editar Musica:", error);
     }
@@ -91,7 +93,16 @@ const EditarMusica = () => {
         </div>
 
         <div>
-          <button onClick={(e) => editarMusica(editMusicModel.id)}>
+          <button
+            style={{
+              width: "200px",
+              height: "40px",
+              fontSize: "20px",
+              marginLeft: "18px",
+              marginTop: "40px",
+            }}
+            onClick={(e) => editarMusica(editMusicModel.id)}
+          >
             Salvar Alterações
           </button>
         </div>
