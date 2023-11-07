@@ -8,16 +8,6 @@ const Contato = () => {
   const [email, setEmail] = useState("");
   const [mensagem, setMensagem] = useState("");
 
-  useEffect(() => {
-    const nomeSalvo = localStorage.getItem("nome");
-    const emailSalvo = localStorage.getItem("email");
-    const mensagemSalva = localStorage.getItem("mensagem");
-
-    if (nomeSalvo) setNome(nomeSalvo);
-    if (emailSalvo) setEmail(emailSalvo);
-    if (mensagemSalva) setMensagem(mensagemSalva);
-  }, []);
-
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -30,6 +20,16 @@ const Contato = () => {
     setMensagem("");
   };
 
+  useEffect(() => {
+    const nomeSalvo = localStorage.getItem("nome");
+    const emailSalvo = localStorage.getItem("email");
+    const mensagemSalva = localStorage.getItem("mensagem");
+
+    if (nomeSalvo) setNome("");
+    if (emailSalvo) setEmail("");
+    if (mensagemSalva) setMensagem("");
+  }, []);
+
   return (
     <div className="contato">
       <header>
@@ -40,10 +40,12 @@ const Contato = () => {
         <form className="form" onSubmit={handleSubmit}>
           <div className="form-group">
             <label htmlFor="nome">Nome:</label>
+
             <input
               type="text"
               id="nome"
               value={nome}
+              placeholder="Insira seu nome..."
               onChange={(e) => setNome(e.target.value)}
             />
           </div>
@@ -53,6 +55,7 @@ const Contato = () => {
               type="email"
               id="email"
               value={email}
+              placeholder="Insira seu email..."
               onChange={(e) => setEmail(e.target.value)}
             />
           </div>
@@ -61,6 +64,7 @@ const Contato = () => {
             <textarea
               id="mensagem"
               value={mensagem}
+              placeholder="Digite sua mensagem..."
               onChange={(e) => setMensagem(e.target.value)}
             ></textarea>
           </div>
