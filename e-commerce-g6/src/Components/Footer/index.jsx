@@ -12,6 +12,8 @@ import { BsSpotify, BsTiktok } from "react-icons/bs";
 const Footer = () => {
   return (
     <footer>
+      <h3>© Serrafy</h3>
+
       <address className="logos">
         <AiFillInstagram />
         <AiFillFacebook />
