@@ -53,3 +53,12 @@ nav a:hover {
   font-weight: bold;
   transition: 0.5s;
 }
+
+.darkmode {
+  width: 8rem;
+  margin-top: -10px;
+  border-radius: 50px;
+  font-size: large;
+  color: rgb(186, 201, 216);
+  background-color: rgb(64, 84, 86);
+}
