@@ -19,7 +19,7 @@ export default function Login() {
 
   const entrar = () => {
     if (login == "" || senha == "") {
-      console.log("Preencha os campo de login e senha");
+      alert("Preencha os campo de login e senha");
     } else if (login == dados.login && senha == dados.senha) {
       const info = {
         login: login,
