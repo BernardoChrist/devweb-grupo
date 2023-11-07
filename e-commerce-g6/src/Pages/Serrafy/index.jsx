@@ -90,7 +90,7 @@ const App = () => {
             buscarPorGenero={carregarMusicasPorGenero}
           />
         </section>
-        <section>
+        <section className="playlist">
           {/* <button onClick={carregarMusicas}>Atualizar</button> */}
           <h2 className="hlist">Sua Playlist</h2>
           {musicas.map((musica) => (
