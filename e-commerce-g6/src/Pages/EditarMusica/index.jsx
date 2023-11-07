@@ -94,6 +94,7 @@ const EditarMusica = () => {
 
         <div>
           <button
+            className="botaoEditar"
             style={{
               width: "200px",
               height: "40px",

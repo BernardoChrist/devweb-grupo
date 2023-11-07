@@ -17,3 +17,8 @@
   color: white; /* Substitua pela cor desejada em formato hexadecimal, RGB, etc. */
   font-size: large;
 }
+
+.botoes button {
+  border-radius: 15px;
+  margin-right: 10px;
+}
