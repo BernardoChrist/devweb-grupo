@@ -34,6 +34,13 @@ function Header() {
             >
               Músicas
             </Link>
+
+            <Link
+              className={isDarkMode ? "text-light" : "text-dark"}
+              to="/sobre"
+            >
+              Sobre
+            </Link>
           </Nav>
         </Navbar.Collapse>
         <Link
