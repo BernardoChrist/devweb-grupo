@@ -1,5 +1,6 @@
-import React from "react";
+import { React, useContext } from "react";
 import "./style.css";
+import { ThemeContext } from "../../context/ThemeContext";
 import {
   AiFillInstagram,
   AiFillFacebook,
@@ -10,11 +11,14 @@ import {
 import { BsSpotify, BsTiktok } from "react-icons/bs";
 
 const Footer = () => {
+  const { isDarkMode } = useContext(ThemeContext);
   return (
-    <footer>
-      <h3>© Serrafy</h3>
+    <footer className={isDarkMode ? "bg-dark" : "bg-light"}>
+      <h3 className={isDarkMode ? "text-light" : "text-dark"}>© Serrafy</h3>
 
-      <address className="logos">
+      <address
+        className={`logos gap-2 ${isDarkMode ? "text-light" : "text-dark"}`}
+      >
         <AiFillInstagram />
         <AiFillFacebook />
         <AiFillYoutube />

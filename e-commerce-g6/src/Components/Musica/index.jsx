@@ -14,7 +14,7 @@ const Musica = ({ item, excluirMusica, editarMusica }) => {
   return (
     <div className="div">
       <span className="nome-genero">
-        {item.nome} - {item.autor}
+        {item.nome} - {item.autor} - {item.genero}
       </span>
       <div className="botoes">
         <button onClick={mudarPg}>Editar</button>

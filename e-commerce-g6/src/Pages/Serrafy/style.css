@@ -4,8 +4,25 @@ body {
 }
 .hlist {
   margin-top: 25px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   color: white;
   text-align: center;
   align-items: center;
+}
+
+.div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.8rem;
+  border: 5px solid white;
+  width: 37rem;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  margin-top: 10px;
+}
+
+.playlist {
+  margin-bottom: 10rem;
 }

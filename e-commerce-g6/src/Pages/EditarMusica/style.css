@@ -11,3 +11,7 @@
   color: aliceblue;
   margin-top: 150px;
 }
+
+.botaoEditar {
+  border-radius: 20px;
+}

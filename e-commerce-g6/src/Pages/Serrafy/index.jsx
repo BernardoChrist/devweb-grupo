@@ -47,6 +47,16 @@ const App = () => {
     }
   };
 
+  const editarMusica = async (id) => {
+    try {
+      const response = await axios.editarMusica(`${url}/${id}`);
+      console.log("Musica alterada com sucesso:", response);
+      setMusicas(musicas.filter((musica) => musica.id !== id));
+    } catch (error) {
+      console.error("Erro na requisição editar Musica:", error);
+    }
+  };
+
   const excluirMusica = async (id) => {
     try {
       const response = await axios.delete(`${url}/${id}`);
@@ -80,7 +90,7 @@ const App = () => {
             buscarPorGenero={carregarMusicasPorGenero}
           />
         </section>
-        <section>
+        <section className="playlist">
           {/* <button onClick={carregarMusicas}>Atualizar</button> */}
           <h2 className="hlist">Sua Playlist</h2>
           {musicas.map((musica) => (

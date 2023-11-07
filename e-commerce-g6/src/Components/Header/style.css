@@ -1,7 +1,4 @@
 header {
-  background-color: black;
-  color: #f3f5f7;
-  padding: 10px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -13,25 +10,21 @@ header {
   z-index: 1000;
 }
 .navbar {
-  background-color: black;
   margin-top: 0;
 }
 nav ul {
-  background-color: black;
   list-style: none;
   display: flex;
   margin: 0;
 }
 
 nav li {
-  background-color: black;
   margin-right: 20px;
   margin: 20px;
 }
 
 nav a {
   text-decoration: none;
-  color: #f3f5f7;
   font-weight: bold;
   font-size: 23px;
   margin: -8px 10px 10px 10px;
@@ -57,6 +50,14 @@ nav a:hover {
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: bold;
-  color: #fff;
   transition: 0.5s;
+}
+
+.darkmode {
+  width: 8rem;
+  margin-top: -10px;
+  border-radius: 50px;
+  font-size: large;
+  color: rgb(186, 201, 216);
+  background-color: rgb(64, 84, 86);
 }

@@ -1,7 +1,6 @@
 import Header from "../../Components/Header";
 import Footer from "../../Components/Footer";
 import { Container } from "react-bootstrap";
-import DarkMode from "../../Components/DarkMode";
 import firstImage from "../../assets/viajar.jpg";
 import secondImage from "../../assets/treino.jpg";
 import thirdImage from "../../assets/radio.jpg";
@@ -13,7 +12,7 @@ import eletronicImage from "../../assets/eletro.jpg";
 import filmeImage from "../../assets/filme.jpg";
 import popImage from "../../assets/pop.jpg";
 import hiphopImage from "../../assets/hiphop.jpg";
-import classicaImage from "../../assets/Classica.jpg";
+import classicaImage from "../../assets/classica.jpg";
 import acusticoImage from "../../assets/acustico.jpg";
 import "./home.css";
 
@@ -134,7 +133,6 @@ const Home = () => {
         <footer>
           <Footer />
         </footer>
-        <DarkMode />
       </div>
     </>
   );

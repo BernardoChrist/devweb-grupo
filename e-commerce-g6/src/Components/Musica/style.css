@@ -7,7 +7,7 @@
   text-align: center;
   align-items: center;
   margin: 15px 0;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   padding: 10px;
   display: flex;
   /* width: 500px; */
@@ -16,4 +16,9 @@
 .nome-genero {
   color: white; /* Substitua pela cor desejada em formato hexadecimal, RGB, etc. */
   font-size: large;
+}
+
+.botoes button {
+  border-radius: 15px;
+  margin-right: 10px;
 }
