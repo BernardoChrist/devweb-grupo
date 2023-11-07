@@ -10,4 +10,4 @@ const DeleteMusica = () => {
   );
 };
 
-export default index;
+export default DeleteMusica;
