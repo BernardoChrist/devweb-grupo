@@ -1,5 +1,5 @@
 <h1 align="center">
-   E-Commerce de Música 🎧
+   SERRAFY 🎧
 </h1>
 <div align="center">
   <img align="right" width="300" height="300" src="https://github.com/BernardoChrist/devweb-grupo/blob/main/e-commerce-g6/src/assets/Serrafy.png">
