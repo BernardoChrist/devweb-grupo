@@ -1,8 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 
-const EditMusica = ({ editarMusica }) => {
+const EditMusica = ({ editarMusica, musica }) => {
+  const [music, setMusic] = useState(musica);
+
+  const handleChange = (event) => {
+    setMusic(event.target.value);
+  };
+
+  const handleEditarMusica = () => {
+    EditMusica();
+    editarMusica(music);
+  };
+
   return (
     <div>
+      <input type="text" value={music} onChange={handleChange} />
       <button onClick={handleEditarMusica}>Editar</button>
     </div>
   );
