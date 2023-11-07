@@ -1,0 +1,11 @@
+body {
+  background: url("../../assets/test.png") no-repeat center center fixed;
+  background-size: cover;
+}
+.hlist {
+  margin-top: 25px;
+  margin-bottom: 20px;
+  color: white;
+  text-align: center;
+  align-items: center;
+}

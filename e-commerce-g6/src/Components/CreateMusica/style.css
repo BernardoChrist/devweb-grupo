@@ -1,0 +1,17 @@
+.div2 {
+  margin-top: 20px;
+  text-align: center;
+}
+.botao {
+  margin-left: 18px;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+h2 {
+  color: white;
+}
+.div2 h2 {
+  color: white;
+  margin-bottom: 20px;
+  margin-top: 150px;
+}

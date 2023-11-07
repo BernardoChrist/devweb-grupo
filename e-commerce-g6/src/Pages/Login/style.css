@@ -1,0 +1,72 @@
+.form {
+  display: block;
+  text-align: center;
+  border-radius: 50px;
+  margin: auto;
+  padding: 2rem;
+  width: 30em;
+  margin-bottom: 0;
+  font-family: "Times New Roman", Times, serif;
+  color: rgba(21, 0, 70, 0.55);
+  border-radius: 1rem;
+  border: 2px solid #1f1e1e5b;
+  background-color: rgba(142, 187, 251, 0.814);
+  margin-top: 150px;
+}
+.form h1 {
+  color: black;
+}
+.login {
+  padding: 60px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  /* padding: auto; */
+  height: 100vh;
+  justify-content: center;
+}
+.botaouniversal {
+  width: 8rem;
+  margin-top: 25px;
+  border-radius: 50px;
+  font-size: large;
+}
+
+.imgs {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15rem;
+}
+.navbar {
+  width: 100%;
+  height: 100px;
+  background-color: rgba(63, 11, 78, 0.286);
+  border-radius: 50px;
+  background-size: cover;
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  list-style: none;
+}
+ul {
+  list-style: none;
+}
+a.nav-link {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.usuario {
+  margin-top: 30px;
+  font-size: 20px;
+  font-style: bold;
+  color: black;
+}
+
+.senha {
+  font-size: 20px;
+  color: black;
+}

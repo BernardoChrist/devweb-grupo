@@ -1,5 +1,5 @@
 footer {
-  background-color: #004aad;
+  background-color: #000000;
   color: #f4f6f9;
   padding: 10px 0;
   display: flex;
@@ -8,4 +8,16 @@ footer {
   text-align: center;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: large;
+  position: absolute;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  height: 9vh;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }

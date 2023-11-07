@@ -1,0 +1,19 @@
+.botoes {
+  text-align: center;
+  align-items: center;
+  margin-left: 25px;
+}
+.div {
+  text-align: center;
+  align-items: center;
+  margin: 15px 0;
+  border: 2px solid black;
+  padding: 10px;
+  display: flex;
+  /* width: 500px; */
+  justify-content: center;
+}
+.nome-genero {
+  color: white; /* Substitua pela cor desejada em formato hexadecimal, RGB, etc. */
+  font-size: large;
+}

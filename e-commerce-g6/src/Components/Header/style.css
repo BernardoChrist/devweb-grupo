@@ -1,5 +1,5 @@
 header {
-  background-color: #004aad;
+  background-color: black;
   color: #f3f5f7;
   padding: 10px 0;
   display: flex;
@@ -7,21 +7,38 @@ header {
   align-items: center;
   font-size: xx-large;
   font-family: Georgia, "Times New Roman", Times, serif;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 1000;
 }
-
+.navbar {
+  background-color: black;
+  margin-top: 0;
+}
 nav ul {
+  background-color: black;
   list-style: none;
   display: flex;
+  margin: 0;
 }
 
 nav li {
+  background-color: black;
   margin-right: 20px;
+  margin: 20px;
 }
 
 nav a {
   text-decoration: none;
   color: #f3f5f7;
   font-weight: bold;
+  font-size: 23px;
+  margin: -8px 10px 10px 10px;
+}
+
+nav a:hover {
+  border-bottom: 2px solid #fff;
 }
 
 .logo {
@@ -31,4 +48,15 @@ nav a {
 .logo img {
   max-width: 125px;
   height: auto;
+}
+
+.bg .navbar .botao-login {
+  display: flex;
+  justify-content: end;
+  justify-content: space-between;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+  transition: 0.5s;
 }
