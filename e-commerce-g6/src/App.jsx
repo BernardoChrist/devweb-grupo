@@ -15,6 +15,7 @@ function App() {
       <Routes>
         <Route path="/serrafy" element={<Serrafy />} />
         <Route path="/" element={<Home />} />
+        <Route path="/home/:user" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/contato" element={<Contato />} />
         <Route path="/sobre" element={<Sobre />} />

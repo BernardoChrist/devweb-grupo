@@ -50,7 +50,7 @@ function Header() {
           Login
         </Link>
         <button className="darkmode" onClick={handleTheme}>
-          dark
+          Dark / Light
         </button>
       </Container>
     </Navbar>
