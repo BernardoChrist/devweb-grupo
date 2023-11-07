@@ -45,11 +45,9 @@ O E-Commerce de Música inclui as seguintes funcionalidades:
 
 ## Autores do projeto
 
-<a href = "https://github.com/BernardoChrist">Bernardo Christ </a></br>
-      <a href = "https://github.com/caiquelms" > Caíque Lemos</a></br>
-      <a href = "https://github.com/eduardocs90">Eduardo Carneiro</a></br>
-      <a href = "https://github.com/JuFMacedo">Julia Freitas</a></br>
-      <a href = "https://github.com/LilianeDavid93">Liliane David </a></br>
-      <a href = "https://github.com/marcospavao">Marcos Pavão</a>
+| [<img loading="lazy" src="https://github.com/BernardoChrist/devweb-grupo/blob/Develop/e-commerce-g6/src/assets/dev/bernardo.jpg" width=115><br><sub>BERNARDO CHRIST</sub>](https://github.com/BernardoChrist) | [<img loading="lazy" src="https://github.com/BernardoChrist/devweb-grupo/blob/Develop/e-commerce-g6/src/assets/dev/caique.png" width=115><br><sub>CAÍQUE LEMOS</sub>](https://github.com/caiquelms) | [<img loading="lazy" src="https://github.com/BernardoChrist/devweb-grupo/blob/Develop/e-commerce-g6/src/assets/dev/edu.png" width=115><br><sub>EDUARDO CARNEIRO</sub>](https://github.com/eduardocs90) | [<img loading="lazy" src="https://github.com/BernardoChrist/devweb-grupo/blob/Develop/e-commerce-g6/src/assets/dev/julia.jpg" width=115><br><sub>JULIA FREITAS</sub>](https://github.com/JuFMacedo) | [<img loading="lazy" src="https://github.com/BernardoChrist/devweb-grupo/blob/Develop/e-commerce-g6/src/assets/dev/lili.png" width=115><br><sub>LILIANE DAVID</sub>](https://github.com/LilianeDavid93) |[<img loading="lazy" src="https://github.com/BernardoChrist/devweb-grupo/blob/Develop/e-commerce-g6/src/assets/dev/marcos.jpg" width=115><br><sub>MARCOS PAVÃO</sub>](https://github.com/marcospavao)
+| :--------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------: |
+
+
 <br><br>
 
