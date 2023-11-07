@@ -1,12 +1,13 @@
 .inputs {
-  margin-top: 100px;
+  margin-top: 70px;
 }
 
 .editarmusica {
-  margin-top: 200px;
+  margin: 20px;
   text-align: center;
 }
 
-h1 {
+.editarmusica h1 {
   color: aliceblue;
+  margin-top: 150px;
 }

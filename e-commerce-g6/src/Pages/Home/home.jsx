@@ -66,28 +66,64 @@ const Home = () => {
         <div className="d-flex flex-wrap">
           <Container>
             <Row>
-              <Col xs={6} md={4}>
-                <Image src={eletronicImage} width={179} height={179} rounded />
+              <Col xs={6} md={2}>
+                <Image
+                  className="img-genero"
+                  src={eletronicImage}
+                  width={179}
+                  height={179}
+                  rounded
+                />
                 <h4 className="titulo">Eletrônica e Dance</h4>
               </Col>
-              <Col xs={6} md={4}>
-                <Image src={filmeImage} width={179} height={179} rounded />
+              <Col xs={6} md={2}>
+                <Image
+                  className="img-genero"
+                  src={filmeImage}
+                  width={179}
+                  height={179}
+                  rounded
+                />
                 <h4 className="titulo">Filmes</h4>
               </Col>
-              <Col xs={6} md={4}>
-                <Image src={popImage} width={179} height={179} rounded />
+              <Col xs={6} md={2}>
+                <Image
+                  className="img-genero"
+                  src={popImage}
+                  width={179}
+                  height={179}
+                  rounded
+                />
                 <h4 className="titulo">Pop</h4>
               </Col>
-              <Col xs={6} md={4}>
-                <Image src={hiphopImage} width={179} height={179} rounded />
+              <Col xs={6} md={2}>
+                <Image
+                  className="img-genero"
+                  src={hiphopImage}
+                  width={179}
+                  height={179}
+                  rounded
+                />
                 <h4 className="titulo">Hip Hop</h4>
               </Col>
-              <Col xs={6} md={4}>
-                <Image src={classicaImage} width={179} height={179} rounded />
+              <Col xs={6} md={2}>
+                <Image
+                  className="img-genero"
+                  src={classicaImage}
+                  width={179}
+                  height={179}
+                  rounded
+                />
                 <h4 className="titulo">Clássico</h4>
               </Col>
-              <Col xs={6} md={4}>
-                <Image src={acusticoImage} width={179} height={179} rounded />
+              <Col xs={6} md={2}>
+                <Image
+                  className="img-genero"
+                  src={acusticoImage}
+                  width={179}
+                  height={179}
+                  rounded
+                />
                 <h4 className="titulo">Acústico</h4>
               </Col>
             </Row>

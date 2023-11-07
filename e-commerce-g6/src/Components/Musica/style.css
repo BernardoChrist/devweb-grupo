@@ -10,10 +10,10 @@
   border: 2px solid black;
   padding: 10px;
   display: flex;
-  width: 500px;
+  /* width: 500px; */
   justify-content: center;
 }
 .nome-genero {
-  color: #ff5733; /* Substitua pela cor desejada em formato hexadecimal, RGB, etc. */
+  color: white; /* Substitua pela cor desejada em formato hexadecimal, RGB, etc. */
   font-size: large;
 }
