@@ -15,10 +15,9 @@ footer {
   height: 9vh;
 }
 
-.insta {
-  margin-left: 10px;
-}
-
-.face {
-  margin-right: 25px;
+.logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
